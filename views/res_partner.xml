@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_dynamic_vat_label_partner_form_inherit" model="ir.ui.view">
+        <field name="name">view.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group/group[1]/span[@name='address_name']/field[@name='type_address_label']"
+                   position="after">
+                <field name="person_type" widget="radio" class="oe_edit_only" options="{'horizontal': true}"/>
+            </xpath>
+            <xpath expr="//sheet/group/group[2]/field[@name='vat']" position="replace">
+                <field name="vat" string="Tax ID" placeholder="Registration Number / VAT Number" required="1"
+                       context="{'person_type': person_type}"
+                       readonly="parent_id" invisible="person_type != 'B'"/>
+                <field name="vat" string="National ID" placeholder="National ID" required="1" readonly="parent_id"
+                       context="{'person_type': person_type}"
+                       invisible="person_type != 'P'"/>
+                <field name="vat" string="Passport ID" placeholder="Passport ID" required="1" readonly="parent_id"
+                       context="{'person_type': person_type}"
+                       invisible="person_type != 'F'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

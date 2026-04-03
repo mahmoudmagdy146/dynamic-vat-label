@@ -1,0 +1,75 @@
+<section style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <h2 style="color:#875A7B;">Dynamic VAT Label for Partners</h2>
+
+    <p>
+        This module dynamically updates the VAT field label and placeholder
+        in the partner form based on the person type.
+    </p>
+
+    <hr/>
+
+    <h3>✨ Features</h3>
+    <ul>
+        <li>✔ Dynamic VAT label based on partner type</li>
+        <li>✔ Real-time UI update (no reload needed)</li>
+        <li>✔ Clean OWL implementation</li>
+        <li>✔ No backend overrides</li>
+        <li>✔ Fully compatible with Odoo 17 / 18 / 19</li>
+    </ul>
+
+    <hr/>
+
+    <h3>🧠 Behavior</h3>
+    <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <tr>
+            <th>Person Type</th>
+            <th>Label</th>
+            <th>Placeholder</th>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td>Tax ID</td>
+            <td>Registration Number / VAT Number</td>
+        </tr>
+        <tr>
+            <td>Individual</td>
+            <td>National ID</td>
+            <td>National ID</td>
+        </tr>
+        <tr>
+            <td>Foreign</td>
+            <td>Passport ID</td>
+            <td>Passport ID</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <h3>⚙️ Technical Details</h3>
+    <ul>
+        <li>Uses OWL patching on FormRenderer</li>
+        <li>Scoped only to <b>res.partner</b></li>
+        <li>Does not affect performance or backend logic</li>
+    </ul>
+
+    <hr/>
+
+    <h3>🚀 Installation</h3>
+    <ol>
+        <li>Install the module</li>
+        <li>Open Contacts</li>
+        <li>Change Person Type</li>
+        <li>See VAT label update instantly</li>
+    </ol>
+
+    <hr/>
+
+    <h3>📞 Support</h3>
+    <p>
+        For customization or support, feel free to contact:
+        <br/>
+        <b>Mahmoud Magdy</b>
+    </p>
+
+</section>
