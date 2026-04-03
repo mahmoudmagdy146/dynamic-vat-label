@@ -1,75 +1,106 @@
-<section style="font-family: Arial, sans-serif; padding: 20px;">
+<section style="max-width: 900px; margin: auto; font-family: Arial, sans-serif;">
 
-    <h2 style="color:#875A7B;">Dynamic VAT Label for Partners</h2>
-
-    <p>
-        This module dynamically updates the VAT field label and placeholder
-        in the partner form based on the person type.
+  <!-- HERO -->
+  <div style="text-align: center; padding: 30px 10px;">
+    <h1 style="font-size: 32px; color: #714B67; margin-bottom: 10px;">
+      Smart Tax ID Labels for Odoo
+    </h1>
+    <p style="font-size: 18px; color: #555;">
+      Automatically display the correct ID field (VAT, National ID, Passport)
+      based on partner type — no confusion, no mistakes.
     </p>
+  </div>
 
-    <hr/>
+  <!-- PROBLEM -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">🚨 The Problem</h2>
+    <p style="color: #555; font-size: 15px;">
+      Odoo uses a single "VAT" field for all partners, which can be confusing when dealing with
+      companies, individuals, or foreign contacts. This often leads to incorrect data entry
+      and user mistakes.
+    </p>
+  </div>
 
-    <h3>✨ Features</h3>
-    <ul>
-        <li>✔ Dynamic VAT label based on partner type</li>
-        <li>✔ Real-time UI update (no reload needed)</li>
-        <li>✔ Clean OWL implementation</li>
-        <li>✔ No backend overrides</li>
-        <li>✔ Fully compatible with Odoo 17 / 18 / 19</li>
+  <!-- SOLUTION -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">✅ The Solution</h2>
+    <p style="color: #555; font-size: 15px;">
+      This module dynamically updates the VAT field label and placeholder based on the partner type,
+      ensuring users always know what information to enter.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">✨ Key Features</h2>
+    <ul style="color: #555; font-size: 15px;">
+      <li>Automatic label switching based on partner type</li>
+      <li>Supports Company, Individual, and Foreign contacts</li>
+      <li>Real-time UI update (no page reload required)</li>
+      <li>Clean and lightweight OWL implementation</li>
+      <li>No backend changes — safe and fast</li>
     </ul>
+  </div>
 
-    <hr/>
-
-    <h3>🧠 Behavior</h3>
-    <table border="1" cellpadding="8" style="border-collapse: collapse;">
-        <tr>
-            <th>Person Type</th>
-            <th>Label</th>
-            <th>Placeholder</th>
-        </tr>
-        <tr>
-            <td>Company</td>
-            <td>Tax ID</td>
-            <td>Registration Number / VAT Number</td>
-        </tr>
-        <tr>
-            <td>Individual</td>
-            <td>National ID</td>
-            <td>National ID</td>
-        </tr>
-        <tr>
-            <td>Foreign</td>
-            <td>Passport ID</td>
-            <td>Passport ID</td>
-        </tr>
+  <!-- HOW IT WORKS -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">⚙️ How It Works</h2>
+    <table style="width:100%; border-collapse: collapse; font-size: 14px;">
+      <tr style="background-color: #f5f5f5;">
+        <th style="border: 1px solid #ddd; padding: 8px;">Partner Type</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Displayed Label</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Placeholder</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Company</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">Tax ID</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">VAT / Registration Number</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Individual</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">National ID</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">National ID</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Foreign</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">Passport ID</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">Passport ID</td>
+      </tr>
     </table>
+  </div>
 
-    <hr/>
-
-    <h3>⚙️ Technical Details</h3>
-    <ul>
-        <li>Uses OWL patching on FormRenderer</li>
-        <li>Scoped only to <b>res.partner</b></li>
-        <li>Does not affect performance or backend logic</li>
-    </ul>
-
-    <hr/>
-
-    <h3>🚀 Installation</h3>
-    <ol>
-        <li>Install the module</li>
-        <li>Open Contacts</li>
-        <li>Change Person Type</li>
-        <li>See VAT label update instantly</li>
+  <!-- USAGE -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">🚀 Usage</h2>
+    <ol style="color: #555; font-size: 15px;">
+      <li>Install the module</li>
+      <li>Go to Contacts</li>
+      <li>Create or edit a partner</li>
+      <li>Change the partner type</li>
+      <li>Watch the VAT field update instantly</li>
     </ol>
+  </div>
 
-    <hr/>
+  <!-- WHY CHOOSE -->
+  <div style="padding: 20px 10px;">
+    <h2 style="color: #333;">💡 Why Choose This Module?</h2>
+    <ul style="color: #555; font-size: 15px;">
+      <li>Improves data accuracy</li>
+      <li>Reduces user confusion</li>
+      <li>Enhances user experience</li>
+      <li>Plug & play — no setup required</li>
+    </ul>
+  </div>
 
-    <h3>📞 Support</h3>
-    <p>
-        For customization or support, feel free to contact:
-        <br/>
-        <b>Mahmoud Magdy</b>
+  <!-- SUPPORT -->
+  <div style="padding: 20px 10px; text-align: center;">
+    <h2 style="color: #333;">📞 Support</h2>
+    <p style="color: #555;">
+      Need customization or help? Feel free to contact:
     </p>
+    <p style="font-weight: bold; color: #714B67;">
+      Mahmoud Magdy
+    </p>
+  </div>
 
 </section>
