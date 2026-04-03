@@ -43,6 +43,7 @@
     'data': [
         'views/res_partner.xml',
     ],
+    'images': ['static/description/banner.png'],
     'price': 09.99,
     'currency': 'USD',
     'installable': True,
